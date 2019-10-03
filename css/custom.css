@@ -136,6 +136,11 @@ img {
 #portfolio {
   margin: 0px;
 }
+@media (max-width:767px){
+  .submenu {
+    height: 8em;
+  }
+}
 
 .submenu {
   position: relative;
