@@ -1,1 +1,107 @@
-In progress !
+<!DOCTYPE html>
+  <html>
+
+  <head>
+    <title>Ingrid Cornec Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Be+Vietnam:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Vibur&display=swap" rel="stylesheet">     
+
+  </head>
+
+  <!-- Mobile Menu -->
+  <div w3-include-menumobile-html="./mobileMenu.html"></div>
+
+  <body>
+    <!-- PAGE CONTENT -->
+    <div class="w3-content" style="max-width:1800px">
+    
+     <!-- Header -->
+     <div w3-include-header-html="./header.html"></div>
+      
+     <!-- Photo Grid -->
+      <div class="submenu">
+        <button class="menuButton menuButtonFocusA" onclick="displayPortfolio(99)">all</button>
+        <button class="menuButton menuButtonFocusI" onclick="displayPortfolio(1)">illustrations </button>
+        <button class="menuButton menuButtonFocusS" onclick="displayPortfolio(2)">médias sociaux </button>
+        <button class="menuButton menuButtonFocusW" onclick="displayPortfolio(3)">web </button>
+        <button class="menuButton menuButtonFocusP" onclick="displayPortfolio(4)">print </button>
+      </div>
+
+      <div id="portfolio">
+        <div class="w3-row-padding" id="myGrid" style="margin-bottom:128px">
+          <div id="column1" class="w3-third">
+            <img id="sirene.jpg" class="image-porfolio" src="./images/sirene.jpg" style="width:100%">
+            <img id="mockup_cadastre-02.jpg" class="image-porfolio" src="./images/mockup_cadastre-02.jpg" style="width:100%">
+            <img id="ibp_capgemini_intro-01.jpg" class="image-porfolio" src="./images/ibp_capgemini_intro-01.jpg" style="width:100%">
+            <img id="cap@hack-01.jpg" class="image-porfolio" src="./images/cap@hack-01.jpg" style="width:100%">
+            <img id="fleurs fesses-02.jpg" class="image-porfolio" src="./images/fleurs fesses-02.jpg" style="width:100%">
+          </div>
+
+          <div id="column2" class="w3-third">
+            <img id="hair.png" class="image-porfolio" src="./images/hair.png" style="width:100%">
+            <img id="herbes.jpg" class="image-porfolio" src="./images/herbes.jpg" style="width:100%">
+            <img id="womensday_intro-02.jpg" class="image-porfolio" src="./images/womensday_intro-02.jpg" style="width:100%">
+            <img id="SALE TORNCH-02.jpg" class="image-porfolio" src="./images/SALE TORNCH-02.jpg" style="width:100%">
+          </div>
+
+          <div id="column3" class="w3-third">
+            <img id="Sale tronche-04.jpg" class="image-porfolio" src="./images/Sale tronche-04.jpg" style="width:100%">
+            <img id="mockup cho7-01.jpg" class="image-porfolio" src="./images/mockup cho7-01.jpg" style="width:100%">
+            <img id="moi.png" class="image-porfolio" src="./images/moi.png" style="width:100%">
+            <img id="elsa-02.jpg" class="image-porfolio" src="./images/elsa-02.jpg" style="width:100%">
+          </div>
+        </div>
+      </div>
+      
+      <div id="scrollUp">
+        <a href="#top"><img src="./to_top.png" /></a>
+      </div>
+      <!-- End Page Content -->
+    </div>
+    
+    <!-- Footer -->
+
+     <!-- Site footer -->
+     <div w3-include-footer-html="./footer.html"></div>
+
+    <!-- The Modal -->
+    <div id="modal" class="modal">
+      <span class="close">×</span>
+      <img class="modal-content" id="imageModal">
+      <div id="caption"></div>
+    </div>
+
+    <script src="js/portfolio.js"></script>
+    <script src="js/injectHtml.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    
+    <script>
+      jQuery(function () {
+        $(function () {
+          $(window).scroll(function () {
+            if ($(this).scrollTop() > 200) {
+              $('#scrollUp').css('right', '10px');
+            } else {
+              $('#scrollUp').removeAttr('style');
+            }
+
+          });
+        });
+      });
+    </script>
+    
+  </body>
+  </html>

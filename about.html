@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+  <html>
+
+  <head>
+    <title>Ingrid Cornec Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Be+Vietnam:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Vibur&display=swap" rel="stylesheet">     
+
+  </head>
+
+  <!-- Mobile Menu -->
+  <div w3-include-menumobile-html="./mobileMenu.html"></div>
+
+  <body>
+    <!-- PAGE CONTENT -->
+    <div class="w3-content" style="max-width:1800px">
+
+
+     <!-- Header -->
+     <div w3-include-header-html="./header.html"></div>
+
+    <div class="flex-container-about">
+       <div style="flex-grow: 9"> 
+           <img class="autoportrait" src="images/about.gif" alt="Présentation conseillère communication ingrid cornec Montréal"/>
+       </div>
+       <div style="flex-grow: 4">
+         <h1 class="about-title"> Salut!</h1> 
+         <h2 class="about-title-2"> Moi c'est Ingrid! </h2>
+         <p class="presentation"> Spécialisée dans la communication et les médias sociaux, je suis installée depuis peu à Montréal. 
+            C'est en France que j'ai grandis et que j'ai étudié pour mon Baccalauréat/DEC ainsi que mon diplôme d'étude collégiale technique en Communication. 
+         </p>
+         <p class="presentation"> En 2015, je poursuis mes études en troisième année de licence fr / Baccalauréat "métiers de l'édition multisupports, orientation jeunesse" à l'IUT de la Roche-Sur-Yon. 
+            Une année charnière au cours de laquelle je découvre le milieu éditorial et où mon cerveau assimile "reliure japonnaise" et "stylo posca" à "paradis". 
+            L'année suivante, je poursuis mes études en maîtrise "communication stratégique et digitale". J'effectue ces deux années en alternance au sein du groupe Capgemini. 
+            Aujourd'hui, je suis à la recherche de mon prochain challenge!  
+         </p>
+       </div>
+    </div>
+
+
+      <!-- End Page Content -->
+    </div>
+
+    <!-- Site footer -->
+    <div w3-include-footer-html="./footer.html"></div>
+
+    <!-- The Modal -->
+    <div id="modal" class="modal">
+      <span class="close">×</span>
+      <img class="modal-content" id="imageModal">
+      <div id="caption"></div>
+    </div>
+
+
+    <script src="js/injectHtml.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    
+    <script>
+      jQuery(function () {
+        $(function () {
+          $(window).scroll(function () {
+            if ($(this).scrollTop() > 200) {
+              $('#scrollUp').css('right', '10px');
+            } else {
+              $('#scrollUp').removeAttr('style');
+            }
+
+          });
+        });
+      });
+    </script>
+    
+  </body>
+  </html>
