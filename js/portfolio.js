@@ -1,65 +1,78 @@
 let articles = [{
     image: "sirene.jpg",
+    imageDescription: "sirene.jpg",
     link: "",
     types: [1, 99]
   },
   {
     image: "hair.png",
+    imageDescription: "",
     link: "",
     types: [1, 99]
   },
   {
     image: "Sale tronche-04.jpg",
+    imageDescription: "",
     link: "",
     types: [1, 99]
   },
   {
     image: "mockup_cadastre-02.jpg",
+    imageDescription: "",
     link: "",
     types: [3, 99]
   },
   {
     image: "herbes.jpg",
+    imageDescription: "",
     link: "",
     types: [1, 99]
   },
   {
     image: "mockup cho7-01.jpg",
+    imageDescription: "",
     link: "",
     types: [3, 99]
   },
   {
     image: "ibp_capgemini_intro-01.jpg",
+    imageDescription: "",
     link: "",
     types: [1, 2, 99]
   },
   {
     image: "womensday_intro-02.jpg",
+    imageDescription: "",
     link: "",
     types: [4, 2, 99]
   },
   {
     image: "moi.png",
+    imageDescription: "",
     link: "",
     types: [1, 99]
   },
   {
     image: "cap@hack-01.jpg",
+    imageDescription: "",
     link: "",
     types: [1, 2, 4, 99]
   },
   {
     image: "SALE TORNCH-02.jpg",
+    imageDescription: "",
     link: "",
     types: [1, 99]
   },
   {
     image: "elsa-02.jpg",
+    imageDescription: "",
     link: "",
     types: [1, 99]
   },
   {
     image: "fleurs fesses-02.jpg",
+    imageDescription: "",
     link: "",
     types: [1, 99]
   }
@@ -111,8 +124,9 @@ function addModal(article) {
   let modal = document.getElementById('modal');
 
   // Get the image and insert it inside the modal - use its "alt" text as a caption
-  let img = document.getElementById(article.image);
-  let modalImg = document.getElementById("imageModal");
+  let idName = article.image.split('.')[0];
+  let img = document.getElementById(idName);
+  let modalImg = document.getElementById("image-modal");
   let captionText = document.getElementById("caption");
   img.onclick = function(){
     modal.style.display = "block";
@@ -131,17 +145,25 @@ function addModal(article) {
 
 
 function addArticleInColomn(column, article) {
+  
+  // hair.png -> hair png -> hair
+  let idName = article.image.split('.')[0];
+
   if(article.link === "") {
-    let image = '<img id="'.concat(article.image)
+    let image = '<img id="'.concat(idName)
     .concat('" class="image-porfolio" src="./images/')
     .concat(article.image)
+    .concat('" alt="')
+    .concat(article.imageDescription)
     .concat('" style="width:100%">');
     return column.concat(image);
   } else {
     let image = '<a href="./pages/'.concat(article.link)
-    .concat('"><img id="' + article.image + '" ')
-    .concat('class="image-porfolio" src="./images/')
+    .concat('"><img id="').concat(idName)
+    .concat('" class="image-porfolio" src="./images/')
     .concat(article.image)
+    .concat('" alt="')
+    .concat(article.imageDescription)
     .concat('" style="width:100%"></a>');
     return column.concat(image);
   }

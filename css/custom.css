@@ -1,10 +1,15 @@
 /* General
 -------------------------------------------------------------------------- */
-#scrollUp {
-  position: fixed;
-  bottom: 10px;
-  right: -100px;
-  opacity: 0.5;
+
+#scroll_to_top { 
+  position: fixed; 
+  width: 25px; 
+  height: 25px; 
+  bottom: 50px; 
+  right: 30px; 
+} 
+#scroll_to_top img { 
+  width: 40px; 
 }
 
 body,
@@ -27,7 +32,7 @@ img {
 /* Header et menu
 -------------------------------------------------------------------------- */
 /*Class for the submenu*/
-.menuButton {
+.menu-button {
   font-size: 17px;
   font-family: "Be Vietnam", "Adobe Blank";
   font-weight: 600;
@@ -37,29 +42,27 @@ img {
   background-color: white;
 }
 
-.menuButton:focus, .menuButton:hover {
+.menu-button:focus, .menu-button:hover {
   outline: 0;
   font-family: "Vibur", "cursive";
   font-size: 25px;
 }
 
-
-.menuButtonFocusA:focus, .menuButtonFocusA:hover {
+.menu-button-focus-a:focus, .menu-button-focus-a:hover {
   color: rgb(212, 161, 206);
 }
-.menuButtonFocusI:focus, .menuButtonFocusI:hover {
+.menu-button-focus-i:focus, .menu-button-focus-i:hover {
   color: rgb(128, 159, 245);
 }
-.menuButtonFocusS:focus, .menuButtonFocusS:hover {
+.menu-button-focus-s:focus, .menu-button-focus-s:hover {
   color: rgb(231, 139, 102);
 }
-.menuButtonFocusW:focus, .menuButtonFocusW:hover {
+.menu-button-focus-w:focus, .menu-button-focus-w:hover {
   color: rgb(141, 185, 172);
 }
-.menuButtonFocusP:focus, .menuButtonFocusP:hover {
+.menu-button-focus-p:focus, .menu-button-focus-p:hover {
   color: rgb(243, 204, 97);
 }
-
 
 .menu-full-size-about {
   font-size: 17px;
@@ -286,9 +289,9 @@ img {
   }
 }
 
-  display:inline-block;
-  margin-bottom:4px
-}
+
+/* Social icons
+-------------------------------------------------------------------------- */
 .social-icons li.title
 {
   margin-right:15px;
@@ -350,7 +353,9 @@ img {
   }
 }
 
-/* footer */
+
+/* Footer
+-------------------------------------------------------------------------- */
 .site-footer
 {
   background-color:#84a3f8;
@@ -546,6 +551,15 @@ img {
 
 
 /*about page*/
+@media (max-width:1300px)
+{
+  .autoportrait, .about-title, .about-title-2, .presentation {
+    padding-left:20px!important;
+    margin-left: 20px!important;
+    margin-right: 20px!important; 
+  }
+}
+
 @media (max-width:767px)
 {
   
@@ -626,8 +640,7 @@ margin-top: -20px;
 
 .presentation {
   margin-left: 100px;
-  margin-right: 500px; 
+  margin-right: 250px; 
   font-family: "Be Vietnam", "Adobe Blank";
   font-size: 18px;
-
 }

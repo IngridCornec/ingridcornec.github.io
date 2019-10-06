@@ -1,8 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
   <html>
 
   <head>
-    <title>Ingrid Cornec Website</title>
+    <title>Ingrid Cornec - Communication & Illustration</title>
+    <meta name="description" content="This website is a portfolio of the works of Ingrid Cornec." />
+    <meta name="keywords" content="web design, illustration" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -33,11 +35,11 @@
       
      <!-- Photo Grid -->
       <div class="submenu">
-        <button class="menuButton menuButtonFocusA" onclick="displayPortfolio(99)">all</button>
-        <button class="menuButton menuButtonFocusI" onclick="displayPortfolio(1)">illustrations </button>
-        <button class="menuButton menuButtonFocusS" onclick="displayPortfolio(2)">médias sociaux </button>
-        <button class="menuButton menuButtonFocusW" onclick="displayPortfolio(3)">web </button>
-        <button class="menuButton menuButtonFocusP" onclick="displayPortfolio(4)">print </button>
+        <button class="menu-button menu-button-focus-a" onclick="displayPortfolio(99)">all</button>
+        <button class="menu-button menu-button-focus-i" onclick="displayPortfolio(1)">illustrations </button>
+        <button class="menu-button menu-button-focus-s" onclick="displayPortfolio(2)">médias sociaux </button>
+        <button class="menu-button menu-button-focus-s" onclick="displayPortfolio(3)">web </button>
+        <button class="menu-button menu-button-focus-p" onclick="displayPortfolio(4)">print </button>
       </div>
 
       <div id="portfolio">
@@ -65,10 +67,9 @@
           </div>
         </div>
       </div>
-      
-      <div id="scrollUp">
-        <a href="#top"><img src="./to_top.png" /></a>
-      </div>
+
+
+    
       <!-- End Page Content -->
     </div>
     
@@ -80,28 +81,12 @@
     <!-- The Modal -->
     <div id="modal" class="modal">
       <span class="close">×</span>
-      <img class="modal-content" id="imageModal">
+      <img id="image-modal" class="modal-content" >
       <div id="caption"></div>
     </div>
 
     <script src="js/portfolio.js"></script>
     <script src="js/injectHtml.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-    
-    <script>
-      jQuery(function () {
-        $(function () {
-          $(window).scroll(function () {
-            if ($(this).scrollTop() > 200) {
-              $('#scrollUp').css('right', '10px');
-            } else {
-              $('#scrollUp').removeAttr('style');
-            }
-
-          });
-        });
-      });
-    </script>
     
   </body>
   </html>

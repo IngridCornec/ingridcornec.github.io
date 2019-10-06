@@ -3,7 +3,7 @@
 /* Screens Resolution : 1200px
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
-    #portfolio{ margin: 0px 40px;}
+    
 }
 
 /* Screens Resolution : 992px
@@ -11,16 +11,18 @@
 @media only screen and (max-width: 992px) {
 	
     #portfolio{ margin: 0px 40px;}
-    #menu-full-size{ display: none;}
-    #menu-burger {display: flex;}
+
 }
 
 
 /* Screens Resolution : 767px
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
-	
-	p{ line-height: 1.4; }
+    
+    #menu-full-size{ display: none;}
+    #menu-burger {display: flex;}
+
+    p{ line-height: 1.4; }
 
 	h1{ font-size: 2.8em; line-height: 1; }
 	h2{ font-size: 2.2em; line-height: 1.1; }
