@@ -1,6 +1,6 @@
 let articles = [{
     image: "sirene.jpg",
-    imageDescription: "sirene.jpg",
+    imageDescription: "Illustration sirene",
     link: "",
     types: [1, 99]
   },
@@ -11,7 +11,7 @@ let articles = [{
     types: [1, 99]
   },
   {
-    image: "Sale tronche-04.jpg",
+    image: "Sale-tronche-04.jpg",
     imageDescription: "",
     link: "",
     types: [1, 99]
@@ -37,7 +37,7 @@ let articles = [{
   {
     image: "ibp_capgemini_intro-01.jpg",
     imageDescription: "",
-    link: "",
+    link: "article_website.html",
     types: [1, 2, 99]
   },
   {
@@ -158,7 +158,7 @@ function addArticleInColomn(column, article) {
     .concat('" style="width:100%">');
     return column.concat(image);
   } else {
-    let image = '<a href="./pages/'.concat(article.link)
+    let image = '<a href="./'.concat(article.link)
     .concat('"><img id="').concat(idName)
     .concat('" class="image-porfolio" src="./images/')
     .concat(article.image)

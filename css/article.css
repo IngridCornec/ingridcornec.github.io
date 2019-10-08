@@ -44,3 +44,20 @@ font-family: "Be Vietnam", "Adobe Blank";
 font-weight: 300;
 
 }
+
+.imagefullarticle {
+    /*max-width: 900px;*/
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+
+@media (max-width:767px){
+    .imagefullarticle {
+        /*max-width: 900px;*/
+        padding-right: 20px!important;
+        padding-left: 20px!important;
+        padding-bottom: 40px;
+    }
+  }
+  
