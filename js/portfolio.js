@@ -23,7 +23,7 @@ let articles = [{
     types: [3, 99]
   },
   {
-    image: "herbes.jpg",
+    image: "logo mauvaises herbes-01.jpg",
     imageDescription: "",
     link: "",
     types: [1, 99]
@@ -31,19 +31,19 @@ let articles = [{
   {
     image: "mockup cho7-01.jpg",
     imageDescription: "",
-    link: "",
+    link: "article_Cho7.html",
     types: [3, 99]
   },
   {
     image: "ibp_capgemini_intro-01.jpg",
     imageDescription: "",
-    link: "article_website.html",
+    link: "article-iBP.html",
     types: [1, 2, 99]
   },
   {
     image: "womensday_intro-02.jpg",
     imageDescription: "",
-    link: "",
+    link: "article_womensday.html",
     types: [4, 2, 99]
   },
   {
@@ -55,11 +55,11 @@ let articles = [{
   {
     image: "cap@hack-01.jpg",
     imageDescription: "",
-    link: "",
+    link: "article_caphack.html",
     types: [1, 2, 4, 99]
   },
   {
-    image: "SALE TORNCH-02.jpg",
+    image: "Sale tronche-03.jpg",
     imageDescription: "",
     link: "",
     types: [1, 99]
@@ -71,12 +71,13 @@ let articles = [{
     types: [1, 99]
   },
   {
-    image: "fleurs fesses-02.jpg",
+    image: "Sale tronche-05.jpg",
     imageDescription: "",
     link: "",
     types: [1, 99]
-  }
+  },
   
+
 ];
 
 function displayPortfolio(selected) {

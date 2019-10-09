@@ -49,6 +49,7 @@ font-weight: 300;
     /*max-width: 900px;*/
     padding-left: 150px;
     padding-right: 150px;
+    padding-bottom: 40px;
 }
 
 
@@ -57,7 +58,7 @@ font-weight: 300;
         /*max-width: 900px;*/
         padding-right: 20px!important;
         padding-left: 20px!important;
-        padding-bottom: 40px;
+        
     }
   }
   

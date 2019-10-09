@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+  <html>
+
+  <head>
+    <title>Ingrid Cornec Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Be+Vietnam:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Vibur&display=swap" rel="stylesheet">     
+
+  </head>
+
+  <!-- Mobile Menu -->
+  <div w3-include-menumobile-html="./mobileMenu.html"></div>
+
+  <body>
+    <!-- PAGE CONTENT -->
+    <div class="w3-content" style="max-width:1800px">
+
+
+     <!-- Header -->
+     <div w3-include-header-html="./header.html"></div>
+
+    <div class="flex-container-about">
+       <div class="widht100" style="flex-grow: 9"> 
+           <img class="autoportrait" src="images/womensdayintro-07.jpg" alt="women's day"/>
+       </div>
+       <div class="" style="flex-grow: 4">
+        <h1 class="about-title">Une newsletter spéciale Women's day</h1> 
+         <h2 class="about-title-2"> Mettre les femmes de Capgemini à l'honneur et communiquer autour de ce discours auprès des collaborateurs </h2>
+         <p class="presentation"> Cette newsletter a été réalisée à l'occasion de la journée internationale de la femme. 
+         <p class="presentation"> L'objectif était de mettre en valeurs différents profils féminins chez Capgemini et de partager leur parcours ainsi que leur point 
+           de vue sur le fait d'être une femme en 2018 et sur ce que l'égalité des sexes représentait pour elles en tant que "millenials".  
+         </p>
+       </div>
+    </div>
+  
+    <img class="imagefullarticle" src="images/womensday-01.jpg" alt="Women's day"/>
+
+      <!-- End Page Content -->
+    </div>
+
+    <!-- Site footer -->
+    <div w3-include-footer-html="./footer.html"></div>
+
+    <!-- The Modal -->
+    <div id="modal" class="modal">
+      <span class="close">×</span>
+      <img class="modal-content" id="imageModal">
+      <div id="caption"></div>
+    </div>
+
+
+    <script src="js/injectHtml.js"></script>
+  
+    
+  </body>
+  </html>
