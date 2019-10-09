@@ -5,13 +5,19 @@ let articles = [{
     types: [1, 99]
   },
   {
+    image: "Sale-tronche-04.jpg",
+    imageDescription: "",
+    link: "",
+    types: [1, 99]
+  },
+  {
     image: "hair.png",
     imageDescription: "",
     link: "",
     types: [1, 99]
   },
   {
-    image: "Sale-tronche-04.jpg",
+    image: "pardon-05.jpg",
     imageDescription: "",
     link: "",
     types: [1, 99]
@@ -47,6 +53,12 @@ let articles = [{
     types: [4, 2, 99]
   },
   {
+    image: "angry-08.jpg",
+    imageDescription: "",
+    link: "",
+    types: [2, 99]
+  },
+  {
     image: "moi.png",
     imageDescription: "",
     link: "",
@@ -55,7 +67,7 @@ let articles = [{
   {
     image: "cap@hack-01.jpg",
     imageDescription: "",
-    link: "article_caphack.html",
+    link: "article_Caphack.html",
     types: [1, 2, 4, 99]
   },
   {
